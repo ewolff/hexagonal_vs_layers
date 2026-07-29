@@ -1,0 +1,10 @@
+.classpath
+.project
+.settings
+.DS_Store
+*~
+_site
+.bundle
+.ruby-version
+vendor
+bin
