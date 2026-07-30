@@ -8,3 +8,4 @@ _site
 .ruby-version
 vendor
 bin
+/.metadata/
