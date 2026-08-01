@@ -8,6 +8,7 @@
 _site
 .bundle
 .ruby-version
+target
 vendor
 bin
 /.metadata/
