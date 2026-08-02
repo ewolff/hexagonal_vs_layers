@@ -7,7 +7,7 @@ import com.tngtech.archunit.junit.AnalyzeClasses;
 import com.tngtech.archunit.junit.ArchTest;
 import com.tngtech.archunit.lang.ArchRule;
 
-@AnalyzeClasses(packages = "hexagonal_vs_layers")
+@AnalyzeClasses(packages = "com.ewolff.hexagonal_vs_layers")
 public class ArchitectureTest {
 
 	@ArchTest

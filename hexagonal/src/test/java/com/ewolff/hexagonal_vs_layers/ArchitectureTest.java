@@ -7,19 +7,19 @@ import com.tngtech.archunit.junit.AnalyzeClasses;
 import com.tngtech.archunit.junit.ArchTest;
 import com.tngtech.archunit.lang.ArchRule;
 
-@AnalyzeClasses(packages = "hexagonal_vs_layers")
+@AnalyzeClasses(packages = "com.ewolff.hexagonal_vs_layers")
 public class ArchitectureTest {
 
 	@ArchTest
 	static final ArchRule logicShouldNotAccessDatabase = noClasses().that().resideInAnyPackage("..logic..").should()
-			.accessClassesThat().resideInAnyPackage("..database..");
+			.accessClassesThat().resideInAnyPackage("..database_adapter..");
 
 	@ArchTest
 	static final ArchRule logicShouldNotAccessUI = noClasses().that().resideInAnyPackage("..logic..").should()
 			.accessClassesThat().resideInAnyPackage("..ui..");
 
 	@ArchTest
-	static final ArchRule uiAndDatabaseShoulOnlyAccessLogic = classes().that().resideInAnyPackage("..database..","..ui..").should()
+	static final ArchRule uiAndDatabaseShoulOnlyAccessLogic = classes().that().resideInAnyPackage("..database_adapter..","..ui..").should()
 			.dependOnClassesThat().resideInAnyPackage("..logic..","java..");
 	
 }
