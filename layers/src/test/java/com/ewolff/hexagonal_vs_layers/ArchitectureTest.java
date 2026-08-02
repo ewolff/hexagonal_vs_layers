@@ -1,4 +1,4 @@
-package hexagonal_vs_layers;
+package com.ewolff.hexagonal_vs_layers;
 
 import static com.tngtech.archunit.lang.syntax.ArchRuleDefinition.noClasses;
 import static com.tngtech.archunit.lang.syntax.ArchRuleDefinition.classes;

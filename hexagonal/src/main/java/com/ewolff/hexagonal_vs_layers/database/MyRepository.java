@@ -1,6 +1,6 @@
-package hexagonal_vs_layers.database;
+package com.ewolff.hexagonal_vs_layers.database;
 
-import hexagonal_vs_layers.logic.Repository;
+import com.ewolff.hexagonal_vs_layers.logic.Repository;
 
 public class MyRepository implements Repository {
 

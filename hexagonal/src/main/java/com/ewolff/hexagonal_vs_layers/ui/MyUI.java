@@ -1,6 +1,6 @@
-package hexagonal_vs_layers.ui;
+package com.ewolff.hexagonal_vs_layers.ui;
 
-import hexagonal_vs_layers.logic.MyBusinessLogicClass;
+import com.ewolff.hexagonal_vs_layers.logic.MyBusinessLogicClass;
 
 public class MyUI {
 	

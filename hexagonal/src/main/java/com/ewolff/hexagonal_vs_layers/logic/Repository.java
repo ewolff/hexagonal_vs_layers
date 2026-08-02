@@ -1,4 +1,4 @@
-package hexagonal_vs_layers.logic;
+package com.ewolff.hexagonal_vs_layers.logic;
 
 public interface Repository {
 

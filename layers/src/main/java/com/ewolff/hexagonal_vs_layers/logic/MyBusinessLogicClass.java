@@ -1,6 +1,6 @@
-package hexagonal_vs_layers.logic;
+package com.ewolff.hexagonal_vs_layers.logic;
 
-import hexagonal_vs_layers.database.MyRepository;
+import com.ewolff.hexagonal_vs_layers.database.MyRepository;
 
 public class MyBusinessLogicClass {
 	
