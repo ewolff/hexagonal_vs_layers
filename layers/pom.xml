@@ -5,50 +5,11 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.ewolff</groupId>
+	<parent>
+		<groupId>com.ewolff</groupId>
+		<artifactId>hexagonal_vs_layers</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
 	<artifactId>layers</artifactId>
-	<version>1.0-SNAPSHOT</version>
-	<name>hexagonal</name>
-
-	<properties>
-		<maven.compiler.source>21</maven.compiler.source>
-		<maven.compiler.target>21</maven.compiler.target>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
-		<junit.version>5.13.4</junit.version>
-		<archunit.version>1.4.2</archunit.version>
-		<maven.surefire.version>3.5.3</maven.surefire.version>
-	</properties>
-
-	<dependencies>
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter</artifactId>
-			<version>${junit.version}</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.tngtech.archunit</groupId>
-			<artifactId>archunit</artifactId>
-			<version>${archunit.version}</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.tngtech.archunit</groupId>
-			<artifactId>archunit-junit5</artifactId>
-			<version>${archunit.version}</version>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>${maven.surefire.version}</version>
-			</plugin>
-		</plugins>
-	</build>
 
 </project>
