@@ -1,14 +1,12 @@
 package com.ewolff.hexagonal_vs_layers;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
 
-import com.ewolff.hexagonal_vs_layers.database.MyRepository;
+import com.ewolff.hexagonal_vs_layers.database_adapater.MyRepository;
 import com.ewolff.hexagonal_vs_layers.logic.MyBusinessLogicClass;
 import com.ewolff.hexagonal_vs_layers.ui.MyUI;
 
-class LayerTest {
+class LogicTest {
 
 	@Test
 	void testBusinesssLogic() {
