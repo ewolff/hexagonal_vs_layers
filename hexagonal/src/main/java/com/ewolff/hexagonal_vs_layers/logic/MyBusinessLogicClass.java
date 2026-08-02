@@ -1,8 +1,9 @@
 package com.ewolff.hexagonal_vs_layers.logic;
 
 import com.ewolff.hexagonal_vs_layers.logic.database_port.Repository;
+import com.ewolff.hexagonal_vs_layers.logic.ui_port.BusinessLogic;
 
-public class MyBusinessLogicClass {
+public class MyBusinessLogicClass implements BusinessLogic {
 	
 	Repository myRepository;
 
@@ -11,6 +12,7 @@ public class MyBusinessLogicClass {
 		this.myRepository = myRepository;
 	}
 	
+	@Override
 	public void someBusinessLogic() {
 		myRepository.someDatabaseCode();
 	}
