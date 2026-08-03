@@ -1,4 +1,4 @@
-package com.ewolff.hexagonal_vs_layers.database_adapater;
+package com.ewolff.hexagonal_vs_layers.database_adapter;
 
 import com.ewolff.hexagonal_vs_layers.logic.database_port.Repository;
 
