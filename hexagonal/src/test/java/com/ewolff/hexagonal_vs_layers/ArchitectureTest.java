@@ -19,7 +19,12 @@ public class ArchitectureTest {
 			.accessClassesThat().resideInAnyPackage("..ui..");
 
 	@ArchTest
-	static final ArchRule uiAndDatabaseShoulOnlyAccessLogic = classes().that().resideInAnyPackage("..database_adapter..","..ui_adapter..").should()
-			.dependOnClassesThat().resideInAnyPackage("..logic..","java..");
-	
+	static final ArchRule uiAdapterShouldOnlyAccessUiPort = classes().that().resideInAnyPackage("..ui_adapter..")
+			.should().dependOnClassesThat().resideInAnyPackage("..logic.ui_port.", "java..");
+
+	@ArchTest
+	static final ArchRule databaseAdapterShoulOnlyAccessDatabasePort = classes().that()
+			.resideInAnyPackage("..database_adapter..").should().dependOnClassesThat()
+			.resideInAnyPackage("..logic.database_port.", "java..");
+
 }
