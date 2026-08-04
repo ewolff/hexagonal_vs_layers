@@ -1,5 +1,7 @@
 # Hexagonal vs Layers Example in Java
 
+[README auf Deutsch](README_DE.html)
+
 This is an extremly stripped down project in Java to show the
 difference between a layered architecture and a hexaagonal
 architecture. I used it in a workshop and it seemed useful despite its
