@@ -43,14 +43,14 @@ To enforce the dependencies, [ArchUnit](https://www.archunit.org/) is
 used.
 
 For layers, the
-[ArchitecttureTest](blob/main/layers/src/test/java/com/ewolff/hexagonal_vs_layers/ArchitectureTest.java)
+[ArchitectureTest](layers/src/test/java/com/ewolff/hexagonal_vs_layers/ArchitectureTest.java)
 ensures:
 * Logic accesses database
 * Logic doesn't access UI
 * UI only accesses logic
 
 For hexagonal, the
-[ArchitecttureTest](blob/main/hexagonal/src/test/java/com/ewolff/hexagonal_vs_layers/ArchitectureTest.java)
+[ArchitectureTest](hexagonal/src/test/java/com/ewolff/hexagonal_vs_layers/ArchitectureTest.java)
 ensures:
 * Logic doesn't accesses database
 * Logic doesn't access UI
@@ -60,7 +60,7 @@ ensures:
 ArchUnit also has a [fluent
 API](https://www.archunit.org/userguide/html/000_Index.html#_getting_started)
 for more complex rules. Both layers and onion (aka hexagonal) are also
-[predifined](https://www.archunit.org/userguide/html/000_Index.html#_architectures).
+[predefined](https://www.archunit.org/userguide/html/000_Index.html#_architectures).
 
 ## Generating the class diagram
 
