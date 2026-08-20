@@ -63,6 +63,9 @@
 							com.ewolff
 						</scanPackage>
 					</scanPackages>
+					<additionalPlantUmlConfigs>
+						<additionalPlantUmlConfig>scale 3</additionalPlantUmlConfig>
+					</additionalPlantUmlConfigs>
 				</configuration>
 				<executions>
 					<execution>
